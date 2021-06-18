@@ -1,0 +1,47 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.subjects-view {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    height: auto;
+    padding: 8%;
+    margin: auto;
+}
+
+.sub-subject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sub-item {
+    /* border: solid 5px black; */
+    border-radius: 0.9em;
+    margin: 0.8em;
+    flex-grow: 1;
+    height: 120px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.sub-row0 {
+    align-items: flex-start;
+}
+
+.sub-title {
+    font-size: 2em;
+}
+
+.sub-text {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 20px;
+
+}
