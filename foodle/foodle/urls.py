@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls.conf import include
 from . import views
 admin.site.site_header = 'Foodle Administration'
 urlpatterns = [
@@ -24,5 +25,6 @@ urlpatterns = [
     path('register', views.register, name='register'),
     path('about', views.about, name='about'),
     path('contact', views.contact, name='contact'),
-    path('login', views.login, name='login')
+    path('login', views.login, name='login'),
+    path('subjects', include('subject.urls'))
 ]
